@@ -11,6 +11,7 @@ def base():
     return render_template('index.html',imgs=['pic1.jpg','pic2.jpg','pic3.jpg',])
 
 
+
 @app.route('/informer')
 def iformer():
     return render_template('informer.html')
