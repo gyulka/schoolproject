@@ -27,6 +27,11 @@ def page1():
 def page2():
     return render_template('promare.html')
 
+@app.route('/video')
+def page3():
+    return render_template('video.html')
+
+
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
