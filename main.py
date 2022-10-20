@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def base():
+    print(request.args)
     return render_template('index.html',imgs=['pic1.jpg','pic2.jpg','pic3.jpg',])
 
 
@@ -22,9 +23,9 @@ def page1():
     return render_template('index.html')
 
 
-@app.route('/page2')
+@app.route('/promare')
 def page2():
-    return render_template('index.html')
+    return render_template('promare.html')
 
 
 if __name__ == '__main__':
